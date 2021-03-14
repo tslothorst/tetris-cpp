@@ -1,11 +1,10 @@
 #pragma once
 
-#ifndef LINUX
 #define SDL_MAIN_HANDLED
+#ifndef LINUX
 #include "SDL/include/SDL.h"							
 #include "SDL/SDL_GfxPrimitives/SDL_gfxPrimitives.h"
 #else
-#define SDL_MAIN_HANDLED
 #include <SDL/SDL.h>									
 #include "SDL/SDL_GfxPrimitives/sdl_gfxprimitives.h"	
 #endif

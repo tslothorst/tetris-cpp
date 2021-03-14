@@ -11,8 +11,9 @@ int main()
 #endif
 // int main ()  // Linux users should use this line instead the previous one
 {
+	
 	// Class for drawing stuff, it uses SDL for the rendering. 
-	IO mIO;
+	IO mIO;	
 	int mScreenHeight = mIO.GetScreenHeight();
 
 	// Pieces
