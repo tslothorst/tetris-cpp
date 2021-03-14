@@ -1,16 +1,9 @@
 #define SDL_MAIN_HANDLED
 #include "main.h"
 #include "Game.h"
-#ifndef LINUX
 #include <windows.h>
-#endif
 
-#ifndef LINUX
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)	// Linux users should quit this line
-#else
-int main()
-#endif
-// int main ()  // Linux users should use this line instead the previous one
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	
 	// Class for drawing stuff, it uses SDL for the rendering. 
