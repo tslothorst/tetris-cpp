@@ -7,7 +7,7 @@
 #include <SDL/SDL.h>									
 #include "SDL/SDL_GfxPrimitives/sdl_gfxprimitives.h"	
 #endif
-#pragma comment (lib, "SDL/lib/SDL.lib")
+#pragma comment (lib, "SDL/lib/x64/SDL.lib")
 #pragma comment (lib, "SDL/SDL_GfxPrimitives/SDL_GfxPrimitives_Static.lib")
 
 enum color { BLACK, RED, GREEN, BLUE, CYAN, MAGENTA, YELLOW, WHITE, COLOR_MAX }; // Colors
