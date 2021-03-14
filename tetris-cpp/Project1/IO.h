@@ -2,11 +2,11 @@
 
 #define SDL_MAIN_HANDLED
 #ifndef LINUX
-#include "SDL.h"							
-#include "sdl_gfxPrimitives.h"
+#include "SDL/include/SDL.h"							
+#include "SDL/SDL_GfxPrimitives/sdl_gfxprimitives.h"
 #else
-#include <SDL.h>									
-#include "sdl_gfxprimitives.h"	
+#include "SDL/include/SDL.h"							
+#include "SDL/SDL_GfxPrimitives/sdl_gfxprimitives.h"	
 #endif
 #pragma comment (lib, "SDL.lib")
 #pragma comment (lib, "SDL_GfxPrimitives_Static.lib")
