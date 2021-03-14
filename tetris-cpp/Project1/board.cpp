@@ -77,7 +77,7 @@ bool board::IsFreeBlock(int pX, int pY)
 bool board::IsPossibleMove(int pX, int pY, int pPiece, int pRotation)
 {
 	// This is just to check the 5x5 blocks of a piece with the appropriate area in the board
-	for (int i1 = pX, int i2 = 0 ; i1 < pY + PieceBlocks; i1++, i2++)
+	for (int i1 = pX, i2 = 0 ; i1 < pY + PieceBlocks; i1++, i2++)
 	{
 		for(int j1 = pY, j2 = 0; j1 < pY + PieceBlocks; j1++, j2++)
 		{
