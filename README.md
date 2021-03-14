@@ -34,5 +34,5 @@ With `constexpr` we no longer use the preprocessor macro to replace all instance
 
 This game still uses raw pointers, these need to be updated to be smart pointers. 
 
-##SDL included##
+## SDL included
 In the repository is included SDL v1.2.15 and SDL GfxPrimitives (version unknown). If you want to do this tutorial yourself this library is hard to come by these days. 
