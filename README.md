@@ -1,9 +1,9 @@
 # Tetris made in C++
 
-##Introduction##
+## Introduction
 This game is made with the help of [the tutorial](https://javilop.com/gamedev/tetris-tutorial-in-c-platform-independent-focused-in-game-logic-for-beginners/) written by Javier López López (javilop.com)
 
-##Updated for C++17##
+## Updated for C++17
 A few aspects of the game have been updated to use C++17 standards. I no longer rely on `#DEFINE` but use `constexpr` to replace this in the self made game files. The SDL libraries are excluded since these are used 'as is'.
 
 Code in the tutorial:
