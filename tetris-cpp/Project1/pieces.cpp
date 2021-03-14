@@ -1,40 +1,5 @@
 #include "pieces.h"
 
-/// <summary>
-/// Returns the type of a block (0: No block, 1: Normal block, 2: Pivot block)
-/// </summary>
-/// <param name="pPiece">Piece to draw</param>
-/// <param name="pRotation">One of four possible rotations</param>
-/// <param name="pX">Horizontal position of the block (X-axis)</param>
-/// <param name="pY">Vertical position of the block (Y-axis)</param>
-/// <returns>int mPieces</returns>
-int pieces::GetBlockType(int pPiece, int pRotation, int pX, int pY)
-{
-    return mPieces [pPiece][pRotation][pX][pY];
-}
-
-/// <summary>
-/// Returns the horizontal position that is needed to draw it in the correct position when it is first created
-/// </summary>
-/// <param name="pPiece">Piece to draw</param>
-/// <param name="pRotation">One of four possible rotations</param>
-/// <returns>int mPiecesInitialPosition</returns>
-int pieces::GetXInitialPosition(int pPiece, int pRotation)
-{
-    return mPiecesInitialPosition [pPiece][pRotation][0];
-}
-
-/// <summary>
-/// Returns the vertical position that is needed to draw it in the correct position when it is first created
-/// </summary>
-/// <param name="pPiece">Piece to draw</param>
-/// <param name="pRotation">One of four possible rotations</param>
-/// <returns>int mPiecesInitialPosition</returns>
-int pieces::GetYInitialPosition(int pPiece, int pRotation)
-{
-    return mPiecesInitialPosition [pPiece][pRotation][1];
-}
-
 // Pieces definition
 char mPieces[7 /*Kind of piece*/][4 /*rotation*/][5 /*horizontal blocks*/][5 /*vertical blocks*/] =
 {
@@ -315,3 +280,38 @@ int mPiecesInitialPosition[7 /*kind of piece */][4 /*r2otation*/][2 /*position*/
         {-2, -2}
        },
 };
+
+/// <summary>
+/// Returns the type of a block (0: No block, 1: Normal block, 2: Pivot block)
+/// </summary>
+/// <param name="pPiece">Piece to draw</param>
+/// <param name="pRotation">One of four possible rotations</param>
+/// <param name="pX">Horizontal position of the block (X-axis)</param>
+/// <param name="pY">Vertical position of the block (Y-axis)</param>
+/// <returns>int mPieces</returns>
+int pieces::GetBlockType(int pPiece, int pRotation, int pX, int pY)
+{
+    return mPieces[pPiece][pRotation][pX][pY];
+}
+
+/// <summary>
+/// Returns the horizontal position that is needed to draw it in the correct position when it is first created
+/// </summary>
+/// <param name="pPiece">Piece to draw</param>
+/// <param name="pRotation">One of four possible rotations</param>
+/// <returns>int mPiecesInitialPosition</returns>
+int pieces::GetXInitialPosition(int pPiece, int pRotation)
+{
+    return mPiecesInitialPosition[pPiece][pRotation][0];
+}
+
+/// <summary>
+/// Returns the vertical position that is needed to draw it in the correct position when it is first created
+/// </summary>
+/// <param name="pPiece">Piece to draw</param>
+/// <param name="pRotation">One of four possible rotations</param>
+/// <returns>int mPiecesInitialPosition</returns>
+int pieces::GetYInitialPosition(int pPiece, int pRotation)
+{
+    return mPiecesInitialPosition[pPiece][pRotation][1];
+}
